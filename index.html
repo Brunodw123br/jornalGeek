@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gazetta Nerd</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/jpg" href="./src/logoMarca.png"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="header">
+            <img alt="logomarca da plataforma" src="./src/logoMarca.png" name="toplogo">
+            <h1>Gazetta Nerd</h1>
+            <div class="botoes">
+                <button>Cadastre-se</button>
+                <button>Iniciar Sessão</button>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li id="jogar">
+                <a href="#">
+                    Jogos
+                </a>
+            </li>
+            <li id="assistir">
+                <a href="#">
+                    Filmes & Séries
+                </a>
+            </li>
+            <li id="ler">
+                <a href="#">
+                    Leitura
+                </a>
+            </li>
+            <li id="stremar">
+                <a href="#">
+                    Youtubers & Streamers
+                </a>
+            </li>
+            <li id="podcast">
+                <a href="#">
+                    Podcasts
+                </a>
+            </li>
+            <li id="pesquisar">
+                <div class="pesquisar">
+                    <input type="text" id="pesquisa" name="pesquisa" placeholder="Pesquisar...">
+                    <button><img alt="pesquisar" src="./src/lupa.png" for="pesquisa"></button>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <section>
+                <div class="carrossel">
+                    <div class="bunkerImg">      
+                        <div id="imagem" alt="galeria de imagens" style="background-image: url(src/grounded.jpg);">
+                            <button onclick="voltarImagem()"><</button>
+                            <h3 id="noticiaCarrossel">Segredos no Jardim que Você não Sabia</h3>
+                            <button onclick="alterarImagem()">></button>
+                        </div>
+                        <div class="cover"></div>
+                    </div>
+                </div>
+            </section>
+            <div class="noticiasPrincipal" >
+                <section>
+                    <div class="noticia" style="border-top: none; padding: 0;">
+                        <h3>
+                            Adeus ao pai do Dragon Ball 
+                        </h3>
+                        <p>
+                            <small>
+                                Escrito Por <b>Bruno Silva</b> 
+                            </small>
+                        </p>
+                        <p>
+                            <small>
+                                escrito em 08/03/2024 editado 10/03/2024
+                            </small>
+                        </p>
+                        <div class="containerNoticia">
+                            <img src="./src/adeus.jpeg" alt="Akira Toriyama com uma edição de adeus"/>
+                            <div class="mockNoticias">
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis iure non repudiandae dolor nulla! Ex voluptate, neque unde aut doloribus sunt dignissimos! Vero placeat eos assumenda aliquid eius doloribus!
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, aliquid accusamus rerum repellat facere incidunt facilis qui eius ab esse provident dolor, illum officiis, suscipit illo quas iste? Quas, veniam?
+                                </p>
+                                <button>Ler Mais</button>
+                            </div>
+                        </div>
+                    </div>
+                </section> 
+                <section>
+                    <div class="noticia">
+                        <h3>
+                            Por que a Saga Dark Souls é otíma
+                        </h3>
+                        <p>
+                            <small>
+                                Escrito Por <b>Gabriel Augusto</b> 
+                            </small>
+                        </p>
+                        <p>
+                            <small>
+                                escrito em 09/03/2024
+                            </small>
+                        </p>
+                        <div class="containerNoticia">
+                            <img src="./src/darkSouls.jpg" alt="Uma arte de dark souls com o cavaleiro com a cabeça baixa enquanto segura a espada"/>
+                            <div class="mockNoticias">
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis iure non repudiandae dolor nulla! Ex voluptate, neque unde aut doloribus sunt dignissimos! Vero placeat eos assumenda aliquid eius doloribus!
+                                </p>
+                                <button>Ler Mais</button>
+                            </div>
+                        </div>
+                    </div>
+                </section> 
+                <section>
+                    <div class="noticia">
+                        <h3>
+                            Sem processo? 
+                        </h3>
+                        <p>
+                            <small>
+                                Escrito Por <b>Jessica Gabriela</b> 
+                            </small>
+                        </p>
+                        <p>
+                            <small>
+                                escrito em 08/03/2024 editado 09/03/2024
+                            </small>
+                        </p>
+                        <div class="containerNoticia">
+                            <img src="./src/mario.jpg" alt="uma fan made do jogo Mário"/>
+                            <div class="mockNoticias">
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis iure non repudiandae dolor nulla! Ex voluptate, neque unde aut doloribus sunt dignissimos! Vero placeat eos assumenda aliquid eius doloribus!
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, aliquid accusamus rerum repellat facere incidunt facilis qui eius ab esse provident dolor, illum officiis, suscipit illo quas iste? Quas, veniam?
+                                </p>
+                                <button>Ler Mais</button>
+                            </div>
+                        </div>
+                    </div>
+                </section> 
+                <section>
+                    <div class="noticia">
+                        <h3>
+                            Nada novo de novo
+                        </h3>
+                        <p>
+                            <small>
+                                Escrito Por <b>Luiz Gustavo</b> 
+                            </small>
+                        </p>
+                        <p>
+                            <small>
+                                escrito em 06/03/2024
+                            </small>
+                        </p>
+                        <div class="containerNoticia">
+                            <img src="./src/fifa.jpg" alt="capa do jogo fifa 2024"/>
+                            <div class="mockNoticias">
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis iure non repudiandae dolor nulla! Ex voluptate, neque unde aut doloribus sunt dignissimos! Vero placeat eos assumenda aliquid eius doloribus!
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, aliquid accusamus rerum repellat facere incidunt facilis qui eius ab esse provident dolor, illum officiis, suscipit illo quas iste? Quas, veniam?
+                                </p>
+                                <button>Ler Mais</button>
+                            </div>
+                        </div>
+                    </div>
+                </section> 
+            </div>
+            <div class="sugestaoVideo">
+                <h3>Recomendação de Vídeos</h3>
+                <aside>
+                    <div class="videosLaterais" style="border: none;">
+                        <iframe  class="videos"src="https://www.youtube.com/embed/UxrIAxua0Zg?si=CBl4dntXDluQQUng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <h3>Nerdolas X Lacração - Thiago Santineli</h3>
+                        <small>10/03/2024</small>
+                    </div>
+                </aside>
+                <aside>
+                    <div class="videosLaterais">
+                        <iframe class="videos"src="https://www.youtube.com/embed/zQgdVcjTVz4?si=dikuV0pCcM5JbB-3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <h3>Virginia e sua suposta nova falcatrua - Ismael</h3>
+                        <small>10/03/2024</small>
+                    </div>
+                </aside>
+                <aside>
+                    <div class="videosLaterais">
+                        <iframe class="videos" src="https://www.youtube.com/embed/sNdDAeRWuHI?si=IrV1Umgj3k_jMzdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <h3>Vermelho, Branco e Sange azul Review - Seijinho</h3>
+                        <small>09/03/2024</small>
+                    </div>
+                </aside>
+                <aside>
+                    <div class="videosLaterais">
+                        <iframe class="videos" src="https://www.youtube.com/embed/WdBKKhOwwiI?si=1nV9VjEeSl7Cp-Yy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <h3>JoJo Little Toddy X Annite - O Jean Luca</h3>
+                        <small>09/03/2024</small>
+                    </div>
+                </aside>
+                <div class="mudarPag">
+                    <button><</button>
+                    <p style="color: #aeaeae;"><b style="color: #fff;">1</b> 2 3 4 ...</p>
+                    <button>></button>
+                </div>
+            </div>
+        </div>
+    </main>      
+    <footer>
+        <div class="footer">
+            <div class="siteFooter">
+                <a href="#header">
+                    <img src="./src/logoMarca.png" alt="logomarca">
+                </a>
+                <h2>Gazetta Nerd</h2>
+            </div>
+            <div class="social">
+                <h2>Siga nossas redes sociais</h2>
+                <div>
+                    <div class="containerSocial">
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noreferrer noopener">
+                            <button class="midia">
+                                <img alt="tikTok" src="./src/tiktok.png">
+                            </button>
+                            <span>Tik Tok</span>
+                        </a>
+                    </div>
+                    <div class="containerSocial">
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noreferrer noopener">
+                            <button class="midia">
+                                <img alt="twitter" src="./src/twitter.png">
+                            </button>
+                            <span>Twitter</span>
+                        </a>
+                    </div>
+                    <div class="containerSocial">
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noreferrer noopener">
+                            <button class="midia">
+                                <img alt="youtube" src="./src/youtube.png">
+                            </button>
+                            <span>Youtube</span>
+                        </a>
+                    </div>
+                    <div class="containerSocial">
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noreferrer noopener">
+                            <button class="midia">
+                                <img alt="instagram" src="./src/instagram.png">
+                            </button>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                    <div class="containerSocial">
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noreferrer noopener">
+                            <button class="midia">
+                                <img alt="facebook" src="./src/facebook.png">
+                            </button>
+                            <span>Facebook</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <span>
+                GAZETTA NERD Company &#169; 2024 Todos os direitos reservados
+            </span>
+        </div>
+    </footer>
+</body>
+</html>
